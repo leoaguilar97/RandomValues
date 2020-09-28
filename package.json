@@ -1,0 +1,25 @@
+{
+  "name": "randomvalues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoaguilar97/RandomValues.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoaguilar97/RandomValues/issues"
+  },
+  "homepage": "https://github.com/leoaguilar97/RandomValues#readme",
+  "dependencies": {
+    "as-table": "^1.0.55",
+    "matrix-js": "^1.5.1",
+    "nodemon": "^2.0.4",
+    "string": "^3.3.3"
+  }
+}
