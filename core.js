@@ -3,6 +3,7 @@ module.exports = (tblObject) => {
 
     let table = tblObject.tabla
     let criterio = tblObject.criterio;
+    let data = tblObject.dataTbl;
 
     // Definir aca como filtrar el valor a agregar
     let seleccion = tblObject.seleccion;
@@ -44,10 +45,12 @@ module.exports = (tblObject) => {
     }
 
     for (let i = 0; i < cantidadDeValores; i++) {
-        result.push(rawResult[i % rawResult.length]);
+        let index = rawResult[i % rawResult.length];
+        result.push([index, data[index - 1]]);
     }
 
-    for (value of result) {
-        console.log(value);
+    for (v of result){
+        console.log(`${v[0]},${v[1]}`);
     }
 };
+
